@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0593a3, #0a4f63);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            width: 320px;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        p {
+            color: #444;
+        }
+
+        h2 {
+            margin: 20px 0;
+            font-size: 32px;
+            color: #0593a3;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #0593a3;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background: #047b89;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Prediction Result</h1>
+    <p>Predicted rating for the given anime:</p>
+    <h2>{{ predicted_rating }}/10 ⭐</h2>
+    <a href="/">Go Back</a>
+</div>
+
+</body>
+</html>
